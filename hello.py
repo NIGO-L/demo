@@ -67,5 +67,8 @@ class Test:
         print(self.__class__)
 
 
+print("shiashdasdasda")
+print("1111111")
+
 t = Test()
 t.prt()
