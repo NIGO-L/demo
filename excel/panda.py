@@ -10,4 +10,4 @@ print(myvar)
 print(myvar.loc["f"])
 
 
-print("测试语句，git")
+print("这是一条测试语句")
