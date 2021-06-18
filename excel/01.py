@@ -11,9 +11,9 @@ import panda as pd
 # df = pd.read_excel("PY考勤明细表V1.05.xlsx", engine = "openpyxl")
 # print(df.head())
 
-mywindow = tk.Tk()
-mywindow.title("计算工具")
-mywindow.geometry("600x400")  # 窗口宽 x 高
+myWindow = tk.Tk()
+myWindow.title("计算工具")
+myWindow.geometry("600x400")  # 窗口宽 x 高
 
 # 制作一个输入框， 并得到输入的值
 
@@ -27,50 +27,50 @@ text_01 = "正在将B表合并到A表"
 a1, a2, a3, b1, b2, b3 = 0, 0, 0, 0, 0, 0
 on_hit = False
 
-mywin_text_A1 = tk.Label(mywindow, text="A1. " + text_A1, bg='grey', height=2)
+mywin_text_A1 = tk.Label(myWindow, text="A1. " + text_A1, bg='grey', height=2)
 mywin_text_A1.place(x=100, y=100)
 mywin_text_A1.pack()
-t1 = tk.StringVar(mywindow, value="公文流水")
-mywin_keyin_A1 = tk.Entry(mywindow, textvariable=t1)
+t1 = tk.StringVar(myWindow, value="公文流水")
+mywin_keyin_A1 = tk.Entry(myWindow, textvariable=t1)
 mywin_keyin_A1.pack()
 A1 = mywin_keyin_A1.get()
 
-mywin_text_A2 = tk.Label(mywindow, text="A2. " + text_A2, height=2)
+mywin_text_A2 = tk.Label(myWindow, text="A2. " + text_A2, height=2)
 mywin_text_A2.place(x=100, y=150)
 mywin_text_A2.pack()
 
-t2 = tk.StringVar(mywindow, value="公文项目明细")
-mywin_keyin_A2 = tk.Entry(mywindow, textvariable=t2)
+t2 = tk.StringVar(myWindow, value="公文项目明细")
+mywin_keyin_A2 = tk.Entry(myWindow, textvariable=t2)
 mywin_keyin_A2.pack()
 A2 = mywin_keyin_A2.get()
 
-mywin_text_A3 = tk.Label(mywindow, text="A3. " + text_A3, height=2)
+mywin_text_A3 = tk.Label(myWindow, text="A3. " + text_A3, height=2)
 mywin_text_A3.place(x=100, y=200)
 mywin_text_A3.pack()
-t3 = tk.StringVar(mywindow, value="使用部门")
-mywin_keyin_A3 = tk.Entry(mywindow, textvariable=t3)
+t3 = tk.StringVar(myWindow, value="使用部门")
+mywin_keyin_A3 = tk.Entry(myWindow, textvariable=t3)
 mywin_keyin_A3.place(x=100, y=250)
 mywin_keyin_A3.pack()
 A3 = mywin_keyin_A3.get()
 
-mywin_text_B1 = tk.Label(mywindow, text="B1. " + text_B1, bg='grey', height=2)
+mywin_text_B1 = tk.Label(myWindow, text="B1. " + text_B1, bg='grey', height=2)
 mywin_text_B1.pack()
-t11 = tk.StringVar(mywindow, value="门店匹配20210415a")
-mywin_keyin_B1 = tk.Entry(mywindow, textvariable=t11)
+t11 = tk.StringVar(myWindow, value="门店匹配20210415a")
+mywin_keyin_B1 = tk.Entry(myWindow, textvariable=t11)
 mywin_keyin_B1.pack()
 B1 = mywin_keyin_B1.get()
 
-mywin_text_B2 = tk.Label(mywindow, text="B2. " + text_B2, height=2)
+mywin_text_B2 = tk.Label(myWindow, text="B2. " + text_B2, height=2)
 mywin_text_B2.pack()
-t12 = tk.StringVar(mywindow, value="Sheet1")
-mywin_keyin_B2 = tk.Entry(mywindow, textvariable=t12)
+t12 = tk.StringVar(myWindow, value="Sheet1")
+mywin_keyin_B2 = tk.Entry(myWindow, textvariable=t12)
 mywin_keyin_B2.pack()
 B2 = mywin_keyin_B2.get()
 
-mywin_text_B3 = tk.Label(mywindow, text="B3. " + text_B3, height=2)
+mywin_text_B3 = tk.Label(myWindow, text="B3. " + text_B3, height=2)
 mywin_text_B3.pack()
-t13 = tk.StringVar(mywindow, value="使用部门")
-mywin_keyin_B3 = tk.Entry(mywindow, textvariable=t13)
+t13 = tk.StringVar(myWindow, value="使用部门")
+mywin_keyin_B3 = tk.Entry(myWindow, textvariable=t13)
 mywin_keyin_B3.pack()
 B3 = mywin_keyin_B3.get()
 
@@ -142,10 +142,10 @@ print(test01)
 print(A2)
 
 var = tk.StringVar()
-l = tk.Label(mywindow, textvariable=var, width=50, height=2)
+l = tk.Label(myWindow, textvariable=var, width=50, height=2)
 l.pack()
 
-cal_a = tk.Button(mywindow, text="开始匹配", command=cal_vl03, height=2)
+cal_a = tk.Button(myWindow, text="开始匹配", command=cal_vl03, height=2)
 cal_a.pack()
 
-mywindow.mainloop()
+myWindow.mainloop()
